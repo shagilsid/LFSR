@@ -16,3 +16,30 @@
     For any prime or prime power q and any positive integer n, there exists a primitive polynomial of degree n 
     over GF(q). [https://mathworld.wolfram.com/PrimitivePolynomial.html]
 8. Feedback Polynomial: _?_
+9. Maximum Length LFSR: When the feedback polynomial is primitive and of degree L the shift register is known 
+    as a maximum length LFSR.
+10. The output sequence of a maximum length LFSR is periodic with period 2L-1. (HOW?)
+11. The basic idea of ACO is to model the problem to solve as the search for a minimum cost path in a 
+graph, and to use artificial ants to search for good paths.
+12. combinatorial optimization: Combinatorial optimization is the process of searching for maxima (or minima) 
+    of an objective function F whose domain is a discrete but large configuration space (as opposed to an 
+    N-dimensional continuous space).
+13. Fitness Function:Fitness Function (also known as the Evaluation Function) evaluates how close a given solution 
+    is to the optimum solution of the desired problem.
+    
+    
+Approach:
+To solve a combinatorial optimization problem via ACO, the main procedure is described as follows: at each cycle, every
+ant constructs a solution and then pheromone trails are updated. The algorithm stops iterating when a termination condition is
+met. Generally, the termination condition may be a certain number of iterations or the achieved result is close enough to
+lower (upper) bound.
+
+The proposed algorithm LFSRACO based on the ACO to attack LFSR follows this standard scheme, whereas several
+components are dependent on the characteristics of our problem. In what follows, we describe the details about
+constructing a solution, and then explain how to define the heuristic information and the fitness function. Finally, we
+present the strategy to update pheromone trails.
+
+In this paper, we adopt a known-plain text method to attack LFSR. In this method, cipher text and part of the plain text are
+known, which means that the output O is known (deduced from the plaintext and the associated ciphertext). the goal is to find
+the primitive polynomial used to generate the Output O .
+
