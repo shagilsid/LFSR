@@ -6,7 +6,7 @@
     3. Techniques which constitute metaheuristic algorithms range from simple local search procedures to complex learning processes.
     4. Metaheuristic algorithms are approximate and usually non-deterministic.
     5. Metaheuristics are not problem-specific.
-4.LFSR:______
+4.LFSR:
 5. Known Plain text attack: During known-plaintext attacks, the attacker has an access to the ciphertext 
     and its corresponding plaintext. His goal is to guess the secret key (or a number of secret keys) or 
     to develop an algorithm which would allow him to decrypt any further messages.
@@ -15,4 +15,4 @@
     extension field from a base field. Primitive polynomials are also irreducible polynomials. 
     For any prime or prime power q and any positive integer n, there exists a primitive polynomial of degree n 
     over GF(q). [https://mathworld.wolfram.com/PrimitivePolynomial.html]
-8.  
+8. Feedback Polynomial: _?_
