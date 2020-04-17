@@ -1,0 +1,27 @@
+Main Procedure:
+  At each cycle, every ant constructs a solution and then pheromone trails are updated.
+  The algo stops iterating when a termination condition is met which can be certain number of iterations or the acheived result is close enough to some actual result.
+  
+Algo LFSRACO:
+  Solution Construction:
+    Known plain text method to attack LFSR. Cipher Text and part of the plain text are known i.e. output O is known.
+    The goal is to find the *primitive polynomial* used to generate the output O.
+    
+    The search space is modeled as two layers of n vertices where n is the length of LFSR. The search space is a grid of two rows and n columns
+    All vertices in the top layer are equal to '1' and the bottom layer vertices are equal to '0' and start node N(0) and final node N(n+1)
+    
+    An ant starts it tour from N0 and move from left to right, its tour is finished at last Node N(n+1).
+    In a column, an ant can only select a single vertex during a particular tour. At the end when the tour is completed, it will consist of n-bit binary string.
+    Each ant constructs a solution using the function "Probabilistic Stepwise Construction" based on a probabilistic move of ants across the nodes.
+    An ant move from node i to node j with a probability P(i,j) given by Bayes theorem equation.
+    
+  
+  Probability Calculation
+    2 Parameters: 1)Amount of pheromone trail on the connecting edge. 2) Heurisitic Value representing the attractiveness of the choice.
+    Using equation (2) best ant is found having best fitness value. In the subsequent iterations, at every decision point, ant uses heurisitic value
+    whish is calculated as follows:
+      E(i,j)=(Using Dynamic Programming)
+    So the concatenated binary string E(i,j) becomes a guess key which is evaluated using the fitness function and the obtained value F(E(i,j)) is used as a heuristic value in Bayes
+  
+  Fitness Function
+      
