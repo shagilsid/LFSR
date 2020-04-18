@@ -24,4 +24,18 @@ Algo LFSRACO:
     So the concatenated binary string E(i,j) becomes a guess key which is evaluated using the fitness function and the obtained value F(E(i,j)) is used as a heuristic value in Bayes
   
   Fitness Function
+      To obtain the best solution(s) within a large search space. Indicates how close the possible solution obtained during search is to optimal solution.
+      Good fitness function hels search algo in exploring the search space more effectively and efficiently.
       
+      Dk(O,G) hamming distance between output O of attacked LFSR and the compared individual (G) generated using the silution assessed 'K'
+      
+      A fitness function equal to 1 indicates that the correct solution has been found.
+  
+  Pheromone Update
+    Once each ant has constructed a solution, only the best ant solution in a particular Run (R) is allowd to update the pheromone trails.
+    The ants also update the best ant information based on their tours fitness values. Pheromone over the edges constituting the tour of the best ant is updated using the equation 3
+    
+    With the passage of time, the concentration of pheromone decreases due to diffusion affects. It is used to decrease the influence of old pheromone in future decisions.
+    So with evaporation, chances to get stuck at local minima are minimised. Using equation 4 evaporation is shown.
+    
+    
