@@ -39,3 +39,10 @@ Algo LFSRACO:
     So with evaporation, chances to get stuck at local minima are minimised. Using equation 4 evaporation is shown.
     
     
+    Questions:
+    1. Heuristic value calculation should be static or dynamic?
+    2. How to calculate heuristic value?
+    3. What are the parameters of fitness function? O,G,K?
+    
+    
+    
